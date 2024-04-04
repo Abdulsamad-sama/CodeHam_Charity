@@ -25,8 +25,8 @@
       <a class="btnhome-popup" href="index.html">Home</a>
       <a class="btnabout-popup" href="about.html">About</a>
       <a class="btnsercvice-popup" href="causes.html">Causes</a>
-      <a class="btnpartnership-popup" href="#">Event</a>
-      <a class="btncontact-popup" href="#">Blog</a>
+      <a class="btnpartnership-popup" href="event.html">Event</a>
+      <a class="btncontact-popup" href="blog.html">Blog</a>
       <button class="login-btn" >Login</button>
     </nav>
   </header>
@@ -44,7 +44,7 @@
         <section class="screen-slider-wrapper">
 
           <div class="screen-slider-container">
-            <div class="allscreen-slider" id="slide2">
+            <div class="allscreen-slider" id="slide1">
               
                 <img src="img/blog-1.jpg" alt="">
               
@@ -60,7 +60,7 @@
               </div>
             </div>
 
-            <div class="allscreen-slider" id="slide1">
+            <div class="allscreen-slider" id="slide2">
               
                 <img src="img/carousel-1.jpg" alt="">
         
@@ -539,7 +539,7 @@
         </div>
 
         <!----- TESTIMONIAL ----->
-        <div class="testimonial context">
+        <div class="testimonial <!-- context -->">
           <div class="section-header">
             <p class="intro">Testimonial</p>
             <h2 class="large-text">
@@ -692,11 +692,11 @@
         </div>
         <div class="popular-link footer-card">
           <h3>Popular Links</h3>
-          <a href="#"><i class="bx bx-cheveron-up"></i>About Us</a>
-          <a href="#"><i class="bx bx-cheveron-up"></i>Contact Us</a>
-          <a href="#"><i class="bx bx-cheveron-up"></i>Popular Causes</a>
-          <a href="#"><i class="bx bx-cheveron-up"></i>Upcoming Event</a>
-          <a href="#"><i class="bx bx-cheveron-up"></i>Latest Blog</a>
+          <a href="about.html"><i class="bx bx-cheveron-up"></i>About Us</a>
+          <a href="contact.html"><i class="bx bx-cheveron-up"></i>Contact Us</a>
+          <a href="causes.html"><i class="bx bx-cheveron-up"></i>Popular Causes</a>
+          <a href="event.html"><i class="bx bx-cheveron-up"></i>Upcoming Event</a>
+          <a href="blog.html"><i class="bx bx-cheveron-up"></i>Latest Blog</a>
         </div>
         <div class="useful-link footer-card">
           <h3>Useful links</h3>
@@ -707,9 +707,11 @@
           <a href="#"><i class="bx bx-cheveron-up"></i>FAQs</a>
         </div>
         <div class="newsletter footer-card">
-          <input type="text" name="" id="" placeholder="Your Email">
-          <button> Suscribe for Newsletter</button>
-          <p>Do not worry, we do not spam😃</p>
+          <form action="">
+            <input type="email" name="email" id="footerInput" placeholder="Your Email" required>
+            <button type="submit"> Suscribe for Newsletter</button>
+            <p>Do not worry, we do not spam😃</p>
+          </form>
         </div>
       </div>
       <div class="footer-copyright">

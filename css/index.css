@@ -636,7 +636,7 @@ header.active{
 .cause-content{
   font-size: 75%;
   display:flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem
 }
@@ -648,7 +648,8 @@ header.active{
 }
 
 .cause-content .cause-card{
-  width: 300px;
+  flex: 0 0 45%;
+  max-width: 300px;
   margin: 0 0 15px 15px;
 }
 
@@ -840,6 +841,7 @@ header.active{
 
 .event-container{
   display: flex;
+  flex-wrap: wrap;
   text-align: left;
   margin-top: 1.5rem;
   gap: 2rem;
@@ -848,8 +850,14 @@ header.active{
 }
 
 .event-card{
-  width: 480px;
+  /* width: 480px; */
   margin: 0 0 15px 15px;
+}
+
+@media screen and (min-width: 998px) {
+  .event-card{
+    flex: 0 0 45%;
+  }
 }
 
 .event-img img{
@@ -1106,7 +1114,7 @@ header.active{
 }
 
 .testimonial-container .testimonial-card{
-  width: 300px;
+  width: 260px;
 }
 
 
@@ -1278,7 +1286,9 @@ header.active{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
 }
 
 .footer-card{
@@ -1286,7 +1296,7 @@ header.active{
   flex-direction: column;
   color: var(--TEXT-COLOR);
   gap: .6rem;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .footer-card h3{
@@ -1314,9 +1324,25 @@ header.active{
   color: var(--TEXT-COLOR);
 }
 
+.newsletter form{
+  display: flex;
+  flex-direction: column;
+}
+
 .newsletter p{
   color: #999;
   cursor: default;
+}
+
+.newsletter button,
+.newsletter input {
+  height: 3rem;
+  width: 17rem;
+}
+
+.newsletter input{
+  color: #000;
+  padding: 15px 6px;
 }
 
 .footer-copyright{
@@ -1338,6 +1364,8 @@ header.active{
 .footer-copyright  p a:hover{
   color: var(--MAIN-COLOR);
 }
+
+
 
 
 /****** || MEDIA QUERY ******/
@@ -1499,7 +1527,7 @@ header.active{
     font-size: 55%;
   }
 
-  .footer-card{
+  .footer-card h3{
     margin-bottom: 0;
   }
 
@@ -1514,6 +1542,11 @@ header.active{
   .team .team-card:hover .team-text {
     height: 120px;
 }
+
+  .footer-card{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 
@@ -1522,6 +1555,7 @@ header.active{
 .first-page{
   background:linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/Lynx.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: calc(100vh - 5rem);
   display: flex;
   justify-content: center;
@@ -1749,3 +1783,6 @@ header.active{
 #Email:-internal-autofill-selected {
   background: none;
 }
+
+
+
