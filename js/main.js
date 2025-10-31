@@ -14,6 +14,19 @@ const lBtnList3 = document.querySelector(".learn3-list");
 const donateBtn1 = document.querySelector(".one")
 const donateBtn2 = document.querySelector(".two")
 const donateBtn3 = document.querySelector(".three")
+// Wait until the DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  // Toggle menu visibility
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    // Optional: animate the hamburger icon
+    hamburger.classList.toggle("open");
+  });
+});
 
 
 /******* SCREEN SLIDER *******/
