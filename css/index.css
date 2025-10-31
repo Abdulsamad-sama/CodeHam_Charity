@@ -1604,11 +1604,11 @@ the
 
 /*  hamburger Responsive behavior */
 @media (max-width: 768px) {
-  .hamburger {
+  #hamburger {
     display: flex;
   }
 
-  .nav-links {
+  #nav-links {
     position: absolute;
     top: 70px;
     right: 0;
@@ -1619,7 +1619,7 @@ the
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
 
-  .nav-links.active {
+  #nav-links.active {
     display: flex;
   }
 }
