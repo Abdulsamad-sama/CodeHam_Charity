@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle menu visibility
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-
-    // Optional: animate the hamburger icon
-    hamburger.classList.toggle("open");
   });
 });
 
